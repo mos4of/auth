@@ -1,0 +1,45 @@
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .registration-info {
+    text-align: center;
+    position: absolute;
+    top: 50px; /* Подберите нужный отступ сверху */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    margin: 0;
+    padding: 5px 0; /* Меньший отступ по вертикали */
+    font-size: 20px; /* Увеличенный размер шрифта */
+    text-align: left; /* Выравнивание текста влево */
+    padding-left: 22px; /* Увеличенный отступ слева */
+    word-wrap: break-word; /* Перенос длинных строк на следующую строку */
+  }
+  
+  .row2 {
+    font-weight: bold;
+    font-size: 26px; /* Еще более увеличенный размер для второго ряда */
+    margin-top: 15px; /* Увеличенный отступ сверху */
+  }
+  
+  .row3,
+  .row4 {
+    font-size: 18px; /* Увеличенный размер шрифта */
+    margin-bottom: 7px; /* Увеличенный отступ снизу */
+  }
+  
