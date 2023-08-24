@@ -1,3 +1,4 @@
+import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
@@ -7,7 +8,7 @@ import './SignUp.css'
 
 const SignUp = () => {
     const dispatch = useDispatch();
-    const { push } = useHistory();
+    const history = useHistory(); 
 
     const handleRegister = (email, password) => {
         const auth = getAuth();
@@ -19,7 +20,7 @@ const SignUp = () => {
                     id: user.uid,
                     token: user.accessToken,
                 }));
-                push('/');
+                history.push('/login');  
             })
             .catch(console.error)
     }
